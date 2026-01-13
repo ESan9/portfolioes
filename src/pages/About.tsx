@@ -1,11 +1,15 @@
+import Foto_CV from "../assets/Foto_CV.png";
+const cvFoto = {
+  image: Foto_CV,
+};
+
 const About = () => {
   return (
     <div className="min-h-screen bg-project">
-      {/* Hero Section */}
       <main className="max-w-7xl mx-auto px-8 pt-20 pb-32">
         <div className="max-w-3xl">
           <img
-            src="src\assets\Foto_CV.png"
+            src={cvFoto.image}
             alt="La mia immagine"
             className="w-50 border-5 border-white rounded-full"
           ></img>

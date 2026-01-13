@@ -1,4 +1,5 @@
 import Typewriter from "./Typewriter";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -11,9 +12,9 @@ const HeroSection = () => {
           Junior Full Stack Developer
         </h1>
         <h1 className="text-6xl md:text-8xl font-bold tracking-tight mb-8 text-white">
-          Sviluppo applicazioni che{" "}
+          Sviluppo applicazioni{" "}
           <span className="text-white-400">
-            <Typewriter text="lasciano il segno." />
+            <Typewriter text="che piacciono" />
           </span>
         </h1>
         <p className="text-xl text-white mb-10 leading-relaxed">
@@ -22,12 +23,24 @@ const HeroSection = () => {
           accessibili per il front end.
         </p>
         <div className="flex gap-4">
-          <button className="border-2 border-white px-8 py-3 rounded-full font-bold text-white hover:bg-cyan-600 hover:text-white transition-all cursor-pointer">
-            Guarda i miei lavori
-          </button>
-          <button className="border-2 border-white px-8 py-3 rounded-full font-bold text-white hover:bg-cyan-600 hover:text-white transition-all cursor-pointer">
+          <Link
+            to="/about"
+            className="hover:bg-cyan-600 transition-colors text-sm md:text-xl text-white mb-10 p-2 border-2 md:hidden"
+          >
+            Chi sono
+          </Link>
+          <Link
+            to="/stack"
+            className="hover:bg-cyan-600 transition-colors text-sm md:text-xl text-white mb-10 p-2 border-2 md:hidden"
+          >
             Le tecnologie che utilizzo
-          </button>
+          </Link>
+          <Link
+            to="/projects"
+            className="hover:bg-cyan-600 transition-colors text-sm md:text-xl text-white mb-10 p-2 border-2"
+          >
+            Guarda i miei progetti
+          </Link>
         </div>
       </div>
     </main>

@@ -21,7 +21,7 @@ const Navbar = () => {
         </Link>
       </div>
       <button className=" text-white px-5 py-2 rounded-full font-medium border-2 border-white hover:bg-cyan-600 transition-all cursor-pointer">
-        Contattami
+        <a href="/contact">Contattami</a>
       </button>
     </nav>
   );
