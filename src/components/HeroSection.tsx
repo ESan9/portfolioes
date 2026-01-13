@@ -1,7 +1,9 @@
 import Typewriter from "./Typewriter";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const HeroSection = () => {
+  const [showSubtitle, setShowSubtitle] = useState(false);
   return (
     <main className="max-w-7xl mx-auto px-8 pt-20 pb-32">
       <div className="max-w-3xl">
@@ -11,13 +13,23 @@ const HeroSection = () => {
         <h1 className="text-white text-3xl md:text-5xl">
           Junior Full Stack Developer
         </h1>
-        <h1 className="text-6xl md:text-8xl font-bold tracking-tight mb-8 text-white">
+        <h1 className="text-6xl md:text-8xl font-bold tracking-tight mb-1 text-white">
           Sviluppo applicazioni{" "}
-          <span className="text-white-400">
-            <Typewriter text="che piacciono" />
+          <span>
+            <Typewriter
+              text="che piacciono"
+              onComplete={() => setShowSubtitle(true)}
+            />
           </span>
         </h1>
-        <p className="text-xl text-white mb-10 leading-relaxed">
+        <span
+          className={`transition-opacity duration-1000 ${
+            showSubtitle ? "opacity-100" : "opacity-0"
+          } text-white`}
+        >
+          <em>// Non solo a me</em>
+        </span>
+        <p className="text-xl text-white mt-8 mb-10 leading-relaxed">
           Il mio focus è scrivere codice pulito e mantenibile, partendo da un
           back end robusto e progettando interfacce utente intuitive e
           accessibili per il front end.
