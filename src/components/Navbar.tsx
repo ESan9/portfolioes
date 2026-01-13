@@ -20,9 +20,12 @@ const Navbar = () => {
           Progetti
         </Link>
       </div>
-      <button className=" text-white px-5 py-2 rounded-full font-medium border-2 border-white hover:bg-cyan-600 transition-all cursor-pointer">
-        <a href="/contact">Contattami</a>
-      </button>
+      <Link
+        to="/contact"
+        className=" text-white px-5 py-2 rounded-full font-medium border-2 border-white hover:bg-cyan-600 transition-all cursor-pointer"
+      >
+        Contattami
+      </Link>
     </nav>
   );
 };
