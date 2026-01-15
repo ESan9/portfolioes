@@ -7,7 +7,7 @@ const projectList = [
     link: "https://segnaliart.vercel.app/",
     tags: ["TypeScript", "React", "Tailwind", "Java", "Spring", "PostgreSQL"],
     description:
-      "L'obiettivo è stato sviluppare un sito vetrina completo per un negozio di artigianato, diviso in due applicativi distinti (Backend API e Frontend Client). Il sistema permette la gestione completa di un catalogo prodotti, categorie e upload di immagini, con un'area riservata protetta per l'amministrazione.",
+      "L'obiettivo è stato sviluppare un sito vetrina completo per un negozio di artigianato, diviso in due applicativi distinti (Backend API e Frontend Client). Il sistema permette la gestione completa di un catalogo prodotti, categorie e upload di immagini, con un'area riservata protetta per l'amministrazione. L'avvio del db richiede circa 50 secondi.",
   },
 ];
 
