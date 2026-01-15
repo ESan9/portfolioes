@@ -1,10 +1,13 @@
 import homeP from "../assets/HomeP.png";
 const projectList = [
   {
+    id: "1",
     title: "Vetrina Segnali, Full stack web app",
     image: homeP,
     link: "https://segnaliart.vercel.app/",
-    tags: ["TypeScript", "React", "Tailwind", "Java", "PostgreSQL"],
+    tags: ["TypeScript", "React", "Tailwind", "Java", "Spring", "PostgreSQL"],
+    description:
+      "L'obiettivo è stato sviluppare un sito vetrina completo per un negozio di artigianato, diviso in due applicativi distinti (Backend API e Frontend Client). Il sistema permette la gestione completa di un catalogo prodotti, categorie e upload di immagini, con un'area riservata protetta per l'amministrazione.",
   },
 ];
 
@@ -12,10 +15,10 @@ const Projects = () => {
   return (
     <main className="max-w-7xl mx-auto px-8 pt-20 pb-32">
       {" "}
-      <h2 className="text-3xl font-bold text-white mb-12">I miei progetti</h2>
+      <h2 className="text-3xl font-bold text-white mb-8">I miei progetti</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-        {projectList.map((project, index) => (
-          <div key={index} className="group flex flex-col">
+        {projectList.map((project) => (
+          <div key={project.id} className="group flex flex-col">
             <div className="overflow-hidden rounded-lg border-2 border-white mb-4">
               <a href={project.link} target="_blank" rel="noreferrer">
                 <img
@@ -26,7 +29,7 @@ const Projects = () => {
               </a>
             </div>
 
-            <h3 className="text-white text-xl font-semibold mb-2">
+            <h3 className="text-white text-xl font-semibold mb-4">
               {project.title}
             </h3>
 
@@ -42,6 +45,7 @@ const Projects = () => {
                 </span>
               ))}
             </div>
+            <p className="text-white/70 text-sm my-4">{project.description}</p>
           </div>
         ))}
       </div>

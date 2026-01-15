@@ -6,10 +6,12 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Stack from "./pages/Stack";
 import Projects from "./pages/Projects";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <div className="min-h-screen bg-project">
         <Navbar />
         <Routes>
