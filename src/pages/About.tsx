@@ -1,7 +1,5 @@
 import Foto_CV from "../assets/Foto_CV.png";
-const cvFoto = {
-  image: Foto_CV,
-};
+import Emanuele_Sanna_JuniorFullStackDeveloper from "../assets/Emanuele_Sanna_JuniorFullStackDeveloper.pdf";
 
 const About = () => {
   return (
@@ -9,7 +7,7 @@ const About = () => {
       <main className="max-w-7xl mx-auto px-8 pt-20 pb-32">
         <div className="max-w-3xl">
           <img
-            src={cvFoto.image}
+            src={Foto_CV}
             alt="La mia immagine"
             className="w-50 border-5 border-white rounded-full"
           ></img>
@@ -17,9 +15,11 @@ const About = () => {
             Mi chiamo Emanuele.
           </h1>
 
-          <p className="text-xl text-white mb-10 leading-relaxed py-5">
+          <h2 className="text-2xl text-white mb-5 leading-relaxed">
             Junior Developer con background in <strong>Consulenza ICT</strong>.
             <br />
+          </h2>
+          <p className="text-xl text-white mb-10 leading-relaxed">
             Dopo un percorso non lineare ho scoperto quanto sia soddisfacente
             sviluppare.
             <br />
@@ -39,6 +39,11 @@ const About = () => {
             raggiungere il miglior risultato possibile, attenuando i bias
             cognitivi di ognuno.
           </p>
+
+          <span className="hover:bg-cyan-600 transition-colors text-sm md:text-xl text-white p-2 border-2">
+            {" "}
+            <a href={Emanuele_Sanna_JuniorFullStackDeveloper}>Il mio CV </a>
+          </span>
         </div>
       </main>
     </div>

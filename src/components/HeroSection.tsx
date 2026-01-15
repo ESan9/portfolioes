@@ -13,7 +13,7 @@ const HeroSection = () => {
         <h1 className="text-white text-3xl md:text-5xl">
           Junior Full Stack Developer
         </h1>
-        <h1 className="text-6xl md:text-8xl font-bold tracking-tight mb-1 text-white">
+        <h2 className="text-6xl md:text-8xl font-bold tracking-tight mb-1 text-white">
           Sviluppo applicazioni{" "}
           <span>
             <Typewriter
@@ -21,7 +21,7 @@ const HeroSection = () => {
               onComplete={() => setShowSubtitle(true)}
             />
           </span>
-        </h1>
+        </h2>
         <span
           className={`transition-opacity duration-1000 ${
             showSubtitle ? "opacity-100" : "opacity-0"
