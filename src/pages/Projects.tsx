@@ -15,7 +15,7 @@ const Projects = () => {
   return (
     <main className="max-w-7xl mx-auto px-8 pt-20 pb-32">
       {" "}
-      <h1 className="text-3xl font-bold text-white mb-8">I miei progetti</h1>
+      <h1 className="text-3xl md:text-5xl text-white mb-8">I miei progetti</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {projectList.map((project) => (
           <div key={project.id} className="group flex flex-col">

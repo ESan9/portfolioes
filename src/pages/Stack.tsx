@@ -2,7 +2,7 @@ const Stack = () => {
   const spanClass =
     "hover:bg-cyan-600 transition-colors text-sm md:text-xl text-white p-2 border-2 mr-2 cursor-default";
   const h1Class = "text-white text-3xl md:text-5xl";
-  const h2Class = "text-white text-2xl md:text-3xl py-8 mb-5";
+  const h2Class = "text-white text-2xl md:text-3xl pt-8 mb-5";
 
   const stackMap = [
     {
