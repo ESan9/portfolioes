@@ -9,6 +9,8 @@ const About = () => {
           src={Foto_CV}
           alt="La mia immagine"
           className="w-50 border-5 border-white rounded-full"
+          width="200"
+          height="200"
         ></img>
         <h1 className="text-white text-3xl md:text-5xl py-5">
           Mi chiamo Emanuele.
