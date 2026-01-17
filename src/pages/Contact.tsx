@@ -9,12 +9,12 @@ const Contact = () => {
     const subject = "Info dal sito";
 
     window.location.href = `mailto:${user}@${domain}?subject=${encodeURIComponent(
-      subject
+      subject,
     )}`;
   };
 
   return (
-    <div className="py-12 px-4 mx-auto max-w-3xl text-center">
+    <main className="py-12 px-4 mx-auto max-w-3xl text-center">
       <h2 className="mb-4 text-3xl font-extrabold text-white">Contattami</h2>
       <p className="mb-8 text-white">
         Clicca il tasto qui sotto per scrivermi direttamente.
@@ -27,7 +27,7 @@ const Contact = () => {
         <MdMail className="mx-2" />
         Invia una mail
       </button>
-    </div>
+    </main>
   );
 };
 
