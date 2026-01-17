@@ -37,18 +37,21 @@ const HeroSection = () => {
         <div className="flex gap-4">
           <Link
             to="/about"
+            aria-label="Approfondisci chi sono"
             className="hover:bg-cyan-600 transition-colors text-sm md:text-xl text-white mb-10 p-2 border-2 md:hidden"
           >
             Chi sono
           </Link>
           <Link
             to="/stack"
+            aria-label="Guarda le tecnologie che utilizzo"
             className="hover:bg-cyan-600 transition-colors text-sm md:text-xl text-white mb-10 p-2 border-2 md:hidden"
           >
             Le tecnologie che utilizzo
           </Link>
           <Link
             to="/projects"
+            aria-label="Guarda i miei progetti"
             className="hover:bg-cyan-600 transition-colors text-sm md:text-xl text-white mb-10 p-2 border-2"
           >
             Guarda i miei progetti
