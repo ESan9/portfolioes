@@ -1,4 +1,4 @@
-import homeP from "../assets/HomeP.jpg";
+import homeP from "../assets/img/HomeP.jpg";
 const projectList = [
   {
     id: "1",

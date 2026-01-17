@@ -1,5 +1,5 @@
-import Foto_CV from "../assets/Foto_CV.jpg";
-import Emanuele_Sanna_JuniorFullStackDeveloper from "../assets/Emanuele_Sanna_JuniorFullStackDeveloper.pdf";
+import Foto_CV from "../assets/img/Foto_CV.jpg";
+import Emanuele_Sanna_JuniorFullStackDeveloper from "../assets/pdf/Emanuele_Sanna_JuniorFullStackDeveloper.pdf";
 
 const About = () => {
   return (
