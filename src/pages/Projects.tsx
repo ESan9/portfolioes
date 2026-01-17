@@ -19,12 +19,15 @@ const Projects = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {projectList.map((project) => (
           <div key={project.id} className="group flex flex-col">
-            <div className="overflow-hidden rounded-lg border-2 border-white mb-4">
+            <div className="aspect-video overflow-hidden rounded-lg border-2 border-white mb-4">
               <a href={project.link} target="_blank" rel="noreferrer">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-auto transform group-hover:scale-105 transition-transform duration-300"
+                  fetchPriority="high"
+                  width="600"
+                  height="400"
+                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
                 />
               </a>
             </div>
