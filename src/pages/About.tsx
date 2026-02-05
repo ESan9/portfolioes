@@ -1,5 +1,5 @@
 import Foto_CV from "../assets/img/Foto_CV.jpg";
-import Emanuele_Sanna_JuniorFullStackDeveloper from "../assets/pdf/Emanuele_Sanna_JuniorFullStackDeveloper.pdf";
+import Emanuele_Sanna_CV from "../assets/pdf/Emanuele_Sanna_CV.pdf";
 
 const About = () => {
   return (
@@ -21,8 +21,10 @@ const About = () => {
           <br />
         </h2>
         <p className="text-xl text-white mb-10 leading-relaxed">
-          Dopo un percorso non lineare ho scoperto quanto sia soddisfacente
-          sviluppare.
+          Considero la mia esperienza multidisciplinare come una serie di
+          feature branch di Git: ogni percorso ha aggiunto valore e ha affinato
+          le mie competenze. Oggi, tutto quel codice è stato mergiato nel main
+          branch: la programmazione.
           <br />
           Il mio focus è <strong>scrivere codice pulito e mantenibile</strong>
           , partendo da un back end robusto e progettando interfacce utente
@@ -42,7 +44,7 @@ const About = () => {
 
         <span className="hover:bg-cyan-600 transition-colors text-sm md:text-xl text-white p-2 border-2">
           {" "}
-          <a href={Emanuele_Sanna_JuniorFullStackDeveloper}>Il mio CV </a>
+          <a href={Emanuele_Sanna_CV}>Il mio CV </a>
         </span>
       </div>
     </main>
