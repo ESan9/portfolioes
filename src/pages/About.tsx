@@ -28,7 +28,7 @@ const About = () => {
           <br />
           Il mio focus è <strong>scrivere codice pulito e mantenibile</strong>
           , partendo da un back end robusto e progettando interfacce utente
-          intuitive e accessibili per il front end.
+          intuitive e accessibili.
           <br />
           L'esperienza in consulenza mi ha allenato al{" "}
           <strong>problem solving</strong> e alla gestione delle scadenze in
