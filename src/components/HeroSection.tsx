@@ -32,7 +32,7 @@ const HeroSection = () => {
         <p className="text-xl text-white mt-8 mb-10 leading-relaxed">
           Il mio focus è scrivere codice pulito e mantenibile, partendo da un
           back end robusto e progettando interfacce utente intuitive e
-          accessibili per il front end.
+          accessibili.
         </p>
         <div className="flex gap-4">
           <Link
